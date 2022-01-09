@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">>
+<head>
+    <meta charset="UTF-8">
+    <title>Create User</title>
+</head>
+<body>
+<form method="POST" th:action="@{/main/create}">
+    >Enter nickname:
+    <input type="text" id="user_name" name="user_name" value="">
+    <br/>
+    Enter status:
+    <input type="text" id="status" name="status" value=""/>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

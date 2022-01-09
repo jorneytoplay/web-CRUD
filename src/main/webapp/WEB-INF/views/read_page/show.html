@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" rel="stylesheet">
+  <title>Show</title>
+</head>
+<body>
+
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">User name</th>
+    <th scope="col">Status</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="person : ${persons}">
+    <td>
+      <a th:text="${person.id}"> totalAmount </a>
+    </td>
+    <td>
+      <a th:text="${person.user_name}"> accountTypeName </a>
+    </td>
+    <td>
+      <a th:text="${person.status}"> user </a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
