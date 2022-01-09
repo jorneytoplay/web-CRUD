@@ -21,13 +21,12 @@ public class ReadController {
     }
 
     @PostMapping("/readById")
-    public String readByIdReady(Model model, @RequestParam String sourceText){
+    public String readByIdReady(@RequestParam String sourceText){
         return "redirect:/main/read/readById/"+sourceText;
     }
 
     @GetMapping("/readAll")
     public String readAll(Model model){
-        System.out.println(personService.getAll());
         model.addAttribute("persons",personService.getAll());
 
         return "read_page/show";
