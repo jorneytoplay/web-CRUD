@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+</head>
+<body>
+
+<form th:action="@{/main}"  method="post">
+    Enter id:
+    <input type="text" th:value="${id}" name="id"/>
+    <br/>
+    Enter new <b th:text="${field}"></b>
+  <input type="text" th:value="${newField}" name="newField"/>
+    <br/>
+  <input type="submit" />
+</form>
+</body>
+</html>

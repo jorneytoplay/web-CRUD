@@ -37,4 +37,10 @@ public class PersonService {
 
     @Transactional
     public void delete(Long id){personCrudRepository.deleteById(id);}
+
+    @Transactional
+    public void updateName(Long id,String field){personCrudRepository.updateName(field,id);}
+
+    @Transactional
+    public void updateStatus(Long id,String field){personCrudRepository.updateStatus(field,id);}
 }
